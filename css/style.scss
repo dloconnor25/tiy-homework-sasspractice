@@ -1,0 +1,75 @@
+$primary: #94b4b3;
+$secondary: #d3795f;
+$text-color: #3c4242;
+
+@mixin vertical-centering{
+ position: relative;
+ top: 50%;
+ transform: translateY(-50%);
+}
+button{
+ padding: 15px;
+ border: 1px solid white;
+ border-radius: 5px;
+ font-family: sans-serif;
+ font-size: 21px;
+ color: white;
+ background: transparent;
+ margin-top: 20px;
+ }
+
+header{
+ background-color: $primary;
+ height: 150px;
+
+li{
+ display: inline;
+ text-align: center;
+ margin-left: 85px;
+a{
+ text-decoration: none;
+ font-family: sans-serif;
+}
+a:hover {
+ color: $secondary;
+ text-decoration: underline;
+   }
+ }
+}
+img {
+  position: relative;
+  top: 20px;
+}
+h1,h2,h3,h4,h5,h6,p,li,a{
+ margin: 0;
+ padding: 0;
+ color: $text-color;
+ font-weight: normal;
+ text-transform: uppercase;
+}
+
+p {
+  font-size: 80px;
+}
+.hero{
+ height: 500px;
+ background-image: url("../images/pencil.jpeg");
+ background-size: cover;
+.hero-text{
+ @include vertical-centering;
+ text-align: center;
+ font-family: sans-serif;
+ font-size: 26px;
+ }
+}
+.banner{
+ background-color: $secondary;
+ height: 150px;
+.banner-text{
+ @include vertical-centering;
+ text-align: center;
+ font-family: sans-serif;
+ padding-left: 200px;
+ padding-right: 200px;
+ }
+}
